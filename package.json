@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/eshlox/supafeedback#readme",
   "workspaces": [
+    "apps/*",
     "packages/*"
   ],
   "devDependencies": {
