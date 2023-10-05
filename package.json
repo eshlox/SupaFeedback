@@ -1,0 +1,35 @@
+{
+  "name": "supafeedback",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:start": "npx -w database supabase start",
+    "db:migrations:list": "npx -w database supabase migration list",
+    "db:migrations:create": "npx -w database supabase migration new",
+    "db:migrations:diff": "npx -w database supabase db diff --use-migra -f",
+    "db:reset": "npx -w database supabase db reset",
+    "db:push": "npx -w database supabase db push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eshlox/supafeedback.git"
+  },
+  "keywords": [
+    "feedback",
+    "supabase"
+  ],
+  "author": "eshlox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eshlox/supafeedback/issues"
+  },
+  "homepage": "https://github.com/eshlox/supafeedback#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}
